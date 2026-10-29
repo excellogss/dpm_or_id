@@ -76,6 +76,12 @@ define('WP_DEBUG', false);
 
 /* Cukup, berhenti menyunting! Selamat ngeblog. */
 
+/* Buat Testing di local server php ke depannya */
+/* === TAMBAHKAN BASE URL LOKAL DI SINI === */
+// define( 'WP_HOME', 'http://localhost/gfomegasoftco_23Okt_26' );
+// define( 'WP_SITEURL', 'http://localhost/gfomegasoftco_23Okt_26' );
+/* ======================================= */
+
 /** Lokasi absolut direktori WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
