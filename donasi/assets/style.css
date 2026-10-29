@@ -1,0 +1,470 @@
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#1A59B2;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+}
+@font-face {
+  font-family: bauhaus;
+  src: url(../fonts/Bauhaus_Regular.ttf);
+}
+.font_logo{
+	font-family: bauhaus;
+}
+.my-float{
+	margin-top:16px;
+}
+.quantity .qty {
+	margin: 0 10px 0 0;
+	padding: 10px 16px !important;
+	width: 80px;
+	text-align: left;
+}
+.quantity input {
+	width: 45px;
+	height: 42px;
+	line-height: 1.65;
+	float: left;
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	border: 1px solid rgba(167, 167, 167, 0.3);
+}
+.quantity-nav {
+	float: left;
+	position: relative;
+	height: 41px;
+	margin: 0 0 0 -11px;
+}
+.quantity-button {
+	cursor: pointer;
+	border-left: 1px solid rgba(167, 167, 167, 0.3);
+	width: 25px;
+	text-align: center;
+	color: inherit;
+	font-size: 14px;
+	line-height: 1.5;
+	transform: translateX(-100%);
+}
+.quantity-button.quantity-up {
+	position: absolute;
+	height: 50%;
+	top: 0;
+	border-bottom: 1px solid rgba(167, 167, 167, 0.3);
+}
+.quantity-button.quantity-down {
+	position: absolute;
+	bottom: -1px;
+	height: 50%;
+}
+.input {
+	transition: border 0.2s ease-in-out;
+}
+
+.input:focus+.label,
+.input:active+.label,
+.input.filled+.label {
+	font-size: .75rem;
+	transition: all 0.2s ease-out;
+	top: -0.1rem;
+	color: #667eea;
+}
+
+.label {
+	transition: all 0.2s ease-out;
+	top: 0.4rem;
+	left: 0;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.cardCss {
+		width: 50%;
+	}
+	.rem6_mob {
+		height: 4rem;
+	}
+	.mrsection_100 {
+		margin-top: 3.5rem;
+	}
+	.display_flex {
+		display: none;
+	}
+	.display_desk {
+		display: none;
+	}
+	.display_mob {
+		display: block;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:auto;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white
+	}
+	.color_textnav{
+		color: #2d3748;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.rem6_mob {
+		height: 4rem;
+	}
+	.mrsection_100 {
+		margin-top: 3.5rem;
+	}
+	.display_flex {
+		display: none;
+	}
+	.display_desk {
+		display: none;
+	}
+	.display_mob {
+		display: block;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:auto;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white;
+	}
+	.color_textnav{
+		color: #2d3748;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.rem6_mob {
+		height: 4rem;
+	}
+	.mrsection_100 {
+		margin-top: 3.4rem;
+	}
+	.display_flex {
+		display: flex;
+	}
+	.display_desk {
+		display: block;
+	}
+	.display_mob {
+		width: 50%;
+		display: none;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:auto;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white;
+	}
+	.color_textnav{
+		color: #2d3748;
+	}
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.rem6_mob {
+		height: 7rem;
+	}
+	.mrsection_100 {
+		margin-top: 3.4rem;
+	}
+	.display_flex {
+		display: flex;
+	}
+	.display_desk {
+		display: none;
+	}
+	.display_mob {
+		width: 50%;
+		display: block;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:auto;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white;
+	}
+	.color_textnav{
+		color: #2d3748;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.rem6_mob {
+		height: 7rem;
+	}
+	.mrsection_100 {
+		margin-top: 3.4rem;
+	}
+	.display_flex {
+		display: flex;
+	}
+	.display_desk {
+		display: block;
+	}
+	.display_mob {
+		width: 50%;
+		display: none;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:100vh;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white;
+	}
+	.color_textnav{
+		color: white;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.rem6_mob {
+		height: 7rem;
+	}
+	.mrsection_100 {
+		margin-top: 6.5rem;
+	}
+	.display_flex {
+		display: flex;
+	}
+	.display_desk {
+		display: block;
+	}
+	.display_mob {
+		display: none;
+	}
+	.hslider {
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height:100vh;
+		background-image: url('http://megaraya.com/hair4allindonesia/assets/img/background2.jpg');
+		background-repeat: no-repeat;
+		margin-top:0px;
+	}
+	.padding_card{
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+	.bg_navbar{
+		background: transparent;
+	}
+	.bg_nav_atas{
+		background: transparent;
+	}
+	.color_logo{
+		color: white
+	}
+	.color_textnav{
+		color: white;
+	}
+}
