@@ -11,7 +11,7 @@
 
 <?php
 $title = "Program Donasi";
-$tags = $_GET['donasi'];
+$tags = $_GET['donasi'] ?? '';
 if($tags != ''){
 	$tags = str_replace('+',' ',$tags);
 	$connect = odbc_connect('Driver={ODBC Driver 17 for SQL Server}; Server=36.92.71.153\\opc; Database=OmegaCloud;',  'RND_ROHMAN', 'rndomega');
